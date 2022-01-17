@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{02ABBB3F-868D-4F52-B2B3-A9F19F55A790}|Default">
+  <MonoDevelop.Ide.ItemProperties.CalendarAppUnitTest FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.CalendarApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Controllers/CalendarApp.cs" Line="7" Column="22" />
+      <File FileName="CalendarAppUnitTest/Controllers/CalendarAppTest.cs" Line="11" Column="58" />
+      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CalendarApp" expanded="True">
+            <Node name="CalendarApp" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="CalendarApp.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="CalendarAppUnitTest" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MultiItemStartupConfigurations />
+</Properties>

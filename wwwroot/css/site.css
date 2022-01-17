@@ -1,0 +1,53 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.btn .btn-list a{
+  background: grey;
+  color: #fff;
+  padding: 10px 17px;
+  text-decoration: none;
+  font-size: 23px;
+  margin: 3px;
+}
+.btn .btn-list a:hover{
+  box-shadow: -4px 4px 3px 0px rgb(0 0 0 / 81%);
+  -webkit-box-shadow: -4px 4px 3px 0px rgb(0 0 0 / 81%);
+  -moz-box-shadow: -4px 4px 3px 0px rgb(0 0 0 / 81%);
+  transition-duration: 0.5s;
+}
+.btn .btn-list .active{
+  box-shadow: -4px 4px 3px 0px rgb(0 0 0 / 81%);
+  -webkit-box-shadow: -4px 4px 3px 0px rgb(0 0 0 / 81%);
+  -moz-box-shadow: -4px 4px 3px 0px rgb(0 0 0 / 81%);
+}
+
+.appointment{
+  margin-top: 10em ;
+  padding: 10px;
+  border: 5px solid grey;
+  box-shadow: -4px 4px 3px 0px rgb(0 0 0 / 81%);
+}
+
+.detail .title{
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.detail .title span, .detail .title table{
+  font-weight: normal;
+}

@@ -1,0 +1,73 @@
+@model IEnumerable<CalendarApp.Models.Appointment>
+@{
+    ViewData["Title"] = "Calendar";
+    string parseData = ",";
+}
+
+<div class="heading col-10 font-weight-bold">Choose Your Month :</div>
+<div class="btn mt-4">
+    <div class="btn-list">
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "1" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="1">Jan</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "2" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="2">Feb</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "3" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="3">Mar</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "4" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="4">Apr</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "5" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="5">May</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "6" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="6">Jun</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "7" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="7">Jul</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "8" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="8">Aug</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "9" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="9">Sep</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "10" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="10">Oct</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "11" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="11">Nov</a>
+        <a class="@(ViewContext.RouteData.Values["id"].ToString() == "12" ? "active" : "")" asp-controller="Calendar" asp-action="Month" asp-route-id="12">Dec</a>
+    </div>
+</div>
+
+<div class="col-12 m-5 ">
+    <div class="row">
+        <div class="col-5 m-1 appointment">
+            <table style="width:100%">
+                <thead>
+                <tr>
+                    <th>Date And Time</th>
+                    <th>Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Time)
+                        </td>
+                        <td>
+                        <a href="#" 
+                        data-name="@Html.DisplayFor(modelItem => item.Name)"
+                        data-date="@Html.DisplayFor(modelItem => item.Time)"
+                        data-organizer="@Html.DisplayFor(modelItem => item.Organizer)"
+                        data-subject="@Html.DisplayFor(modelItem => item.Subject)"
+                        data-attendees="
+                             @foreach (var Attendee in item.Attendees) {
+                                  @Attendee.name;
+                                  @parseData
+                             }">@Html.DisplayFor(modelItem => item.Name)</a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6 m-1 appointment appointmentDetail" style="display: none;">
+            <div class="detail">
+                <div class="title">Description : <span class="desc"></span></div>
+                <div class="title">Date : <span class="date"></span></div>
+                <div class="title">Organizer : <span class="organizer"></span></div>
+                <div class="title">Subject : <span class="subject"></span></div>
+                <div class="title">Attendees : 
+                    <div class="attendee">
+                        <table>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
