@@ -1,14 +1,18 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using CalendarApp.Models;
+using CalendarApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<CalendarAppContext>(options =>
 options.UseSqlite(builder.Configuration.GetConnectionString("CalendarAppContext")));
+builder.Services.AddScoped<IAppointmentService, AppointmentService>();  
 
 
 

@@ -1,32 +1,39 @@
 ﻿<Properties StartupConfiguration="{02ABBB3F-868D-4F52-B2B3-A9F19F55A790}|Default">
-  <MonoDevelop.Ide.ItemProperties.CalendarAppUnitTest FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.CalendarApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CalendarAppUnitTest/Controllers/CalendarAppTest.cs">
     <Files>
-      <File FileName="Controllers/CalendarApp.cs" Line="7" Column="22" />
-      <File FileName="CalendarAppUnitTest/Controllers/CalendarAppTest.cs" Line="11" Column="58" />
-      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/CalendarApp.cs" Line="23" Column="13" />
+      <File FileName="Controllers/HomeController.cs" Line="3" Column="26" />
+      <File FileName="data/CalendarContext.cs" Line="9" Column="36" />
+      <File FileName="Models/AppointmentModel.cs" Line="11" Column="29" />
+      <File FileName="Models/SeedData.cs" Line="166" Column="26" />
+      <File FileName="Models/AttendeesModel.cs" Line="8" Column="34" />
+      <File FileName="../../../share/dotnet/sdk/6.0.101/Sdks/Microsoft.NET.Sdk.Razor/targets/Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets" Line="94" Column="5" />
+      <File FileName="CalendarAppUnitTest/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="CalendarAppUnitTest/Controllers/CalendarAppTest.cs" Line="13" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CalendarApp" expanded="True">
-            <Node name="CalendarApp" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True">
-                <Node name="CalendarApp.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="CalendarAppUnitTest" expanded="True">
-              <Node name="Controllers" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="CalendarApp" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="CalendarApp" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>CalendarAppUnitTest/CalendarAppUnitTest.csproj</String>
+  </DisabledProjects>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CalendarAppUnitTests FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MultiItemStartupConfigurations />
 </Properties>

@@ -159,7 +159,8 @@ namespace CalendarApp.Models
                 context.SaveChanges();
                 context.Attendees.AddRange(
                      new Attendees{
-                         context.Appointment.Single(s => s.Id == 1).Id
+                          name = "Francesco Pio Hildingr",
+                          AppointmentID = context.Appointment.Single(s => s.Id == 1).Id
                      },
                       new Attendees{
                           name = "John Smith",
